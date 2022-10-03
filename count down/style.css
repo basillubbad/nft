@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+font-family: 'Oswald', sans-serif;
+height: 100vh;
+width: 100%;
+color: #fff;
+text-align: center;
+}
+
+
+
+
+
+.timer-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
+    height: 100vh;
+    z-index: 2;
+  }
+  
+  
+  #timer {
+    color: #F6F4F3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: .7em;
+    letter-spacing: 5px;
+    margin-top: 25%;
+  }
+  
+  .days, .hours, .minutes, .seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 150px;
+    border-radius: 5px;
+    margin:10px
+  }
+  
+  .days {
+    background: #EF2F3C;
+  }
+  
+  .hours {
+    background: #F6F4F3;
+    color: #183059;
+  }
+  
+  .minutes {
+    background: #276FBF;
+  }
+  
+  .seconds {
+    background: #F0A202;
+  }
+  
+  .numbers {
+    font-family: "Montserrat", sans-serif;
+    color: #183059;
+    font-size: 4em;
+  }
+  
+  #right-img,#left-img{
+    position:absolute;
+    right:10px;
+    top:22%;
+    width:20%;
+    animation:float 6s ease-in-out infinite;;
+}
+  #left-img{
+   left:10px;
+
+    }
+
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-20px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+    
+ 
+  @media only screen and (max-width: 768px) {
+  
+  
+    .days, .hours, .minutes, .seconds {
+  
+      width: 150px;
+  
+    }
+  
+    .timer-container {
+      width: 100%;
+    }
+    
+    #timer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      margin-top: 45%;
+
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+  
+    #right-img{
+      top:20px;
+      right:10%;
+      width:80%;
+      animation:float 6s ease-in-out infinite;;
+  }
+
+    #left-img{
+display: none;
+       }
+    .timer-container {
+      width: 100%;
+    }
+    #timer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      margin-top: 80%;
+    }
+  }
+
+
+
+.container{
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+ }
+ 
+ .demo .large-header {
+    background-color: #00000000;
+ }
+
