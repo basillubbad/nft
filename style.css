@@ -7,8 +7,8 @@
   height: 100%;
 } */
 body {
-  background: url("img/stars.png") #000 repeat top center/100% !important;
-  --col-deepblue: #414141;
+/*   background: url("img/stars.png") #000 repeat top center/100% !important;
+  --col-deepblue: #414141; */
 
   height: 100%;
   overflow-x: hidden;
@@ -477,17 +477,17 @@ color: white;
 
 .twinkling {
   z-index: -2;
-  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png")
+/*   background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") */
     repeat top center;
-  animation: move-twink-back 200s linear infinite;
-}
+/*   animation: move-twink-back 200s linear infinite;
+} */
 
 .clouds {
   z-index: -1;
-  background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
-    top center;
-  animation: move-clouds-back 200s linear infinite;
-}
+/*   background: transparent url("https://image.ibb.co/bT4N7T/clouds.png") repeat
+    top center; */
+/*   animation: move-clouds-back 200s linear infinite;
+} */
 /*
  CSS for the main interaction
 */
